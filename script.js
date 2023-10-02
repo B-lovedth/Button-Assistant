@@ -48,7 +48,7 @@ buttons.forEach(function (button) {
   button.onblur = function () {
     assistantContainer.style.transform= `translate(calc(${winWidth}px - 20rem) , calc(${winHeight}px - 8rem))`;
       image.src = "waiting.gif";
-        assistantText.textContent = "Select an Image...";
+        assistantText.textContent = "Click a button mate...";
   }
   
 });

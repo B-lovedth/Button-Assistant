@@ -7,16 +7,41 @@
 }
 
 body{
-    display:grid;
-    justify-items: center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:2rem;
     min-height: 100vh;
-    background: #f2f2f2;
+    background:  linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);;
     position:relative;
     overflow: hidden;
-
+    background-size: 200% 200%;
+    padding:2rem 0;
+    animation: gradient 5s ease-in-out infinite;
 }
+@keyframes gradient {
+    0% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  h1{
+        font-size: 3rem;
+        color:#fff;
+        text-align:center;
+  }
+  p{
+        font-size: 1.5rem;
+        color:#fff;
+        text-align:center;
+  }
 #assistant-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -47,22 +72,25 @@ body{
   }
   .button-grid{
     max-width:80%;
+    width:100%;
     margin:0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     grid-gap: 2rem;
     margin-top: 10px;
   }
-
+  
   button{
+      width:100%;
     background: #fff;
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 1.5rem;
-    width:20rem;
     cursor: pointer;
+    font-weight:bold;
     box-shadow:0 0 10px rgb(0 0 0 / 7%);
     transition: 0.5s ease-in-out;
+    color:#505050;
   }
   #hover-icon {
     position: fixed;
@@ -77,4 +105,9 @@ body{
     align-items: center;
     cursor: pointer;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+  }
