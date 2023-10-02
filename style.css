@@ -105,7 +105,85 @@ body{
     align-items: center;
     cursor: pointer;
   }
-
+.dont-display{
+    visibility: hidden;
+    opacity: 0;
+}
+  .button-grid button:hover{
+    background: #FC466B;
+    color:#fff;
+    border: 1px solid #FC466B;
+  }
+  .button-grid button:active{
+    background: #3F5EFB;
+    color:#fff;
+    border: 1px solid #3F5EFB;
+  }
+  .button-grid button:focus{
+    outline:none;
+  }
+  .button-grid button:disabled{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+  }
+  .button-grid button:disabled:hover{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+  }
+  .button-grid button:disabled:active{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+  }
+  .button-grid button:disabled:focus{
+    outline:none;
+  }
+  .button-grid button:disabled:disabled{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+  }
+  .button-grid button:disabled:disabled:hover{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+  }
+  .button-grid button:disabled:disabled:active{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+  }
+  .button-grid button:disabled:disabled:focus{
+    outline:none;
+  }
+  .button-grid button:disabled:disabled:disabled{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+  }
+  .button-grid button:disabled:disabled:disabled:hover{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+  }
+  .button-grid button:disabled:disabled:disabled:active{
+    background: #ccc;
+    color:#fff;
+    border: 1px solid #ccc;
+  }
+  .button-grid button:disabled:disabled:disabled:focus{
+    outline:none;
+  }
+  .button-grid button:disabled:disabled:disabled:disabled{
+    background: #ccc;
+    color:#fff;
+    border: 1
+}
   @media screen and (max-width: 768px) {
     html{
         font-size: 50%;
